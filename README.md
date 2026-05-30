@@ -1,78 +1,217 @@
-CoinHit is a small Unreal Engine gameplay prototype focused on competitive replayability and decision-making under pressure.
+# CoinHit
 
-The core gameplay loop revolves around the player competing against an AI opponent to collect the maximum number of coins within a limited arena. While the player manually navigates the environment, the AI continuously calculates and moves toward the nearest available coin, creating a constantly shifting race for optimal routes and resource control.
+A gameplay-focused Unreal Engine prototype built around player-versus-AI competition, resource collection, and replayability.
 
----
-
-# Core Gameplay Features
-
-* Player vs AI competitive gameplay loop
-* AI opponent dynamically targets nearest available coin
-* Live score tracking for both player and AI
-* Replayability-focused design through emergent routing decisions
-* Start menu and end-game result screen
-* Simple but functional gameplay state flow
-* Built in Unreal Engine
+CoinHit was developed as part of an Unreal Engine workshop, where foundational systems such as character movement, coin collection, UI implementation, materials, and AI navigation were introduced. Building on these systems, I designed and implemented a competitive gameplay loop where players race against an AI opponent to maximize their score through strategic coin collection.
 
 ---
 
-# Gameplay Design Goal
+## Project Status
 
-The main idea behind CoinHit was exploring how a very simple ruleset can still create replayability through:
+**Current Status:** Playable Prototype
 
-* route optimization
-* timing
-* movement efficiency
-* reactive decision-making
-
-Even though the mechanics are straightforward, matches can play out differently depending on:
-
-* player movement choices
-* coin spawn positioning
-* AI path competition
-* risk/reward decisions while collecting coins
-
-The project was intentionally designed as a gameplay systems prototype rather than a visually polished production game.
+The project serves as an exploration of gameplay systems, AI competition, player decision-making, and replayability within Unreal Engine using Blueprints.
 
 ---
 
-# Technical Focus Areas
+## Gameplay Overview
 
-This prototype was primarily an experiment in:
+The player competes against an AI-controlled opponent to collect as many coins as possible before all available coins on the map are exhausted.
 
-* gameplay loop implementation
-* basic AI behavior
-* UI state communication
-* score management systems
-* game flow structuring in Unreal Engine
+Both the player and AI continuously accumulate points based on collected coins, creating a competitive race for resources.
+
+The match ends once all coins have been collected, after which the final scores are displayed on the end screen.
 
 ---
 
-# Current Limitations
+## Gameplay Showcase
+<img width="1024" height="607" alt="Untitleddesign9-ezgif com-optimize" src="https://github.com/user-attachments/assets/e86a2538-c90a-4c26-bee3-04f0b298d022" />
+<img width="1024" height="607" alt="Untitleddesign10-ezgif com-optimize" src="https://github.com/user-attachments/assets/31f7b9a9-c194-4f93-8de5-3e64a126741a" />
 
-CoinHit is still an early prototype and has several areas that could be expanded further:
-
-* improved visual polish
-* more advanced AI behavior
-* procedural coin spawning
-* multiplayer support
-* dynamic difficulty scaling
-* additional movement mechanics and powerups
+<img width="1024" height="607" alt="Untitleddesign8-ezgif com-optimize" src="https://github.com/user-attachments/assets/db3309fd-6269-484b-bba1-6882e70948b8" />
 
 ---
 
-# Video Preview
+## My Contribution
 
-Gameplay footage:
-[https://youtu.be/Fw8HxkAwSoI](url)
+Building upon the workshop foundation, I independently designed and implemented:
+
+- Competitive player-versus-AI gameplay loop
+- Score tracking and comparison system
+- Win/loss gameplay structure
+- Dual coin-type gameplay mechanic
+- Resource competition design
+- Gameplay balancing and testing
+- Project integration and iteration
 
 ---
 
-# Developer
+## Core Features
+
+- Custom third-person character controller
+- Animation Blueprint integration
+- Enhanced Input System setup
+- AI opponent navigation system
+- Live player and AI score tracking
+- Start menu UI
+- End screen UI
+- Multiple coin types
+- Replayability-focused gameplay loop
+
+---
+
+## Gameplay Systems
+
+### Competitive Resource Collection
+
+The core gameplay revolves around competing against an AI opponent for a limited number of resources.
+
+Players must balance movement efficiency, route planning, and coin prioritization to outperform the AI before all resources are depleted.
+
+---
+
+### Dual Coin System
+
+The project features two collectible coin types:
+
+#### Yellow Coins
+
+- Increase player score
+- No gameplay penalty
+
+#### Red Coins
+
+- Increase player score
+- Temporarily reduce player movement speed
+
+This creates a simple risk-versus-reward decision where players must choose whether additional points are worth sacrificing mobility.
+
+---
+
+### AI Opponent
+
+The AI continuously searches for and moves toward the nearest available coin.
+
+Using Unreal Engine's navigation system, the AI dynamically updates its target as coins are collected, creating an active competitor rather than a static obstacle.
+
+The AI's presence creates:
+
+- Resource pressure
+- Route optimization decisions
+- Replayability through competition
+
+---
+
+### Score Tracking System
+
+The game tracks:
+
+- Player score
+- AI score
+- Current match state
+
+Scores update in real time throughout the match, allowing players to continuously evaluate their performance relative to the AI opponent.
+
+---
+
+### UI Systems
+
+The project includes:
+
+#### Start Screen
+
+- Game introduction
+- Match start flow
+
+#### Gameplay HUD
+
+- Live score display
+- Match information
+
+#### End Screen
+
+- Final score comparison
+- Match result presentation
+
+---
+
+## Technical Focus
+
+This project was created to explore:
+
+- Unreal Engine Blueprints
+- Gameplay prototyping
+- AI navigation systems
+- Character controller implementation
+- UI systems
+- Gameplay loop design
+- Replayability through competition
+
+---
+
+## Challenges Solved
+
+### Creating Meaningful AI Competition
+
+Instead of treating the AI as an enemy, the project frames it as a competing resource collector. This creates tension through competition rather than combat.
+
+### Risk-Reward Decision Making
+
+Introducing red coins allowed players to gain additional points while sacrificing movement speed, creating simple but meaningful choices.
+
+### Replayability
+
+Because both the player and AI compete for shared resources, different matches can play out differently depending on movement decisions and collection routes.
+
+---
+
+## Tech Stack
+
+- Unreal Engine 5
+- Blueprints
+- Animation Blueprints
+- Enhanced Input System
+- Unreal Navigation System
+
+---
+
+## Key Takeaways
+
+Through this project I gained experience with:
+
+- Gameplay prototyping in Unreal Engine
+- Blueprint scripting
+- AI navigation systems
+- UI implementation
+- Character controller setup
+- Gameplay balancing
+- Competitive gameplay design
+- Rapid iteration workflows
+
+---
+
+## Future Improvements
+
+Planned future improvements:
+
+- Smarter AI decision-making
+- Multiple AI difficulty levels
+- Additional power-ups
+- Larger maps
+- Dynamic coin spawning
+- Time attack mode
+
+---
+
+## Developer
 
 Mohd Ayaan Khan
-Unity Gameplay Systems & Prototyping Developer
 
-* GitHub: [https://github.com/MAK031205](https://github.com/MAK031205)
-* itch.io: [https://mohdayaankhan.itch.io/understeer](https://mohdayaankhan.itch.io/understeer)
-* ArtStation: [https://www.artstation.com/mak031205](https://www.artstation.com/mak031205)
+GitHub:
+https://github.com/MAK031205
+
+itch.io:
+https://mohdayaankhan.itch.io
+
+ArtStation:
+https://mak031205.artstation.com
