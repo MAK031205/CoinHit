@@ -2,7 +2,7 @@
 
 A gameplay-focused Unreal Engine prototype built around player-versus-AI competition, resource collection, and replayability.
 
-CoinHit was developed as part of an Unreal Engine workshop, where foundational systems such as character movement, coin collection, UI implementation, materials, and AI navigation were introduced. Building on these systems, I designed and implemented a competitive gameplay loop where players race against an AI opponent to maximize their score through strategic coin collection.
+CoinHit began as part of an Unreal Engine workshop that introduced foundational systems such as character movement, UI implementation, AI navigation, and coin collection. I then expanded the project by designing and implementing a competitive player-versus-AI gameplay loop focused on replayability and resource competition.
 
 ---
 
@@ -43,6 +43,18 @@ Building upon the workshop foundation, I independently designed and implemented:
 - Resource competition design
 - Gameplay balancing and testing
 - Project integration and iteration
+
+---
+
+## Original Design Contributions
+
+The workshop provided foundational Unreal Engine systems and tooling. My primary contribution was transforming those systems into a complete gameplay experience through:
+
+- Competitive player-versus-AI gameplay
+- Dual coin risk/reward mechanics
+- Score race structure
+- Match progression and end conditions
+- Replayability-focused balancing
 
 ---
 
